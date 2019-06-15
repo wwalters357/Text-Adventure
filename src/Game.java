@@ -18,7 +18,7 @@ class Game {
     }
   }
 
-  public void playLevel(Level level){
+  private void playLevel(Level level){
     for(Room room : level.getLayout()){
       if(room.getType() == RoomType.ENEMY){
         System.out.println("You have entered a monster room\nPrepare for battle");
