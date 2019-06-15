@@ -56,10 +56,10 @@ class Game {
             player.attack();
             break;
           case 2:
-            player.defend();
+            player.defend(e.getDamage());
             break;
           case 3:
-            player.item();
+            player.item(0);
             break;
           case 4:
             player.run();
