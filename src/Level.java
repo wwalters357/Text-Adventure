@@ -14,4 +14,8 @@ class Level {
     }
     layout.add(new Room(RoomType.BOSS));
   }
+
+  public ArrayList<Room> getLayout(){
+    return layout;
+  }
 }
