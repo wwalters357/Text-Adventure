@@ -17,4 +17,12 @@ class Room {
         break;
     }
   }
+
+  public RoomType getType(){
+    return type;
+  }
+
+  public Enemy getEnemy(){
+    return enemy;
+  }
 }

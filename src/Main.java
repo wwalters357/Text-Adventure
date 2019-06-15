@@ -6,6 +6,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String name = sc.nextLine();
         Player p1 = new Player(name, 2, 5, 6);
-        Level level1 = new Level(10);
+        Game game = new Game(1);
     }
 }
