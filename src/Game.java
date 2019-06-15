@@ -67,11 +67,14 @@ class Game {
           default:
             System.out.println("Invalid Response.  Try Again");
             break;
-
-      if(enemy.tempHealth == 0){
+        }
+      if(enemy.tempHealth <= 0) {
         System.out.println("You have defeated the :" + e.getName());
         break;
       }
+      else if(player.tempHealth <= 0) {
+        System.out.println("You have defeated the :" + e.getName());
+        break;
       }
     }
   }
