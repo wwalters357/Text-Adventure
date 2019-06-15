@@ -1,9 +1,9 @@
 import java.util.ArrayList;
-import java.util.Math;
+import java.lang.Math;
 
 class Character{
   private String name;
-  private int tempHealth, health, armor, damage, level, money;
+  private int tempHealth, health, armor, damage, level, money, exp;
   private final static double accuracy = 0.75;
 
   public Character(String name, int health, int armor, int damage){
@@ -14,6 +14,7 @@ class Character{
     this.damage = damage;
     this.level = 1;
     this.money = 0;
+    this.exp = 0;
   }
 
   public String getName(){
@@ -32,6 +33,8 @@ class Character{
     return damage;
   }
 
+  public int getExp(){ return exp; }
+
   public void setName(String name){
     this.name = name;
   }
@@ -47,6 +50,8 @@ class Character{
   public void setDamage(int damage){
     this.damage = damage;
   }
+
+  public void setExp(int exp){ this.exp = exp; }
   
   public int attack(){
     if(Math.random() <= accuracy){

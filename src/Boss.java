@@ -5,7 +5,7 @@ class Boss extends Enemy {
   }
 
   public int strongAttack() {
-    damage = this.attack() * 2;
-    return damage;
+    setDamage(this.attack() * 2);
+    return getDamage();
   }
 }

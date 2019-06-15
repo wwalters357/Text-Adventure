@@ -1,3 +1,3 @@
 enum RoomType {
-  MONSTER, ITEM, MERCHANT, BOSS;
+  ENEMY, ITEM, MERCHANT, BOSS;
 }
